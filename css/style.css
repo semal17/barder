@@ -12,7 +12,13 @@ body {
     background-position: top center;
     background-repeat: no-repeat;
 }
-
+.inner-page {
+    color: #000000;
+    background-color: #f9f6f3;
+    background-image: url(../img/pattern-light.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+}
 a {
     text-decoration: none;
 }
@@ -21,7 +27,7 @@ img {
     height: auto;
 }
 .visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hiden,
+input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
     position: absolute;
     width: 1px;
@@ -76,7 +82,10 @@ border: none;
     display: block;
     padding: 25px 20px;
     vertical-align: middle;
-   color: #ffffff;
+    color: #ffffff;
+}
+.user-navigation a {
+    padding: 25px 0 25px 35px;
 }
 .site-navigation a:hover,
 .site-navigation a:focus,
@@ -329,6 +338,11 @@ background-color: #242424;
     width: 368px;
     height: 153px;
 }
+.price-logo {
+    order: 2;
+    width: 111px;
+    height: 24px;   
+}
 .main-navigation-wrapper {
     width: 100%;
     margin-bottom: 60px;
@@ -410,6 +424,7 @@ width: 380px;
 }
 
 .modal-login {
+    display: none;
     top: 120px;
     left: 50%;
     width: 300px;
@@ -467,6 +482,7 @@ transform: rotate(-45deg);
     text-transform: inherit;
     background-color: #f9f6f3;
     border: 2px solid #000000;
+    margin-top: 10px;
 }
 
 .login-form input:focus {
@@ -530,3 +546,18 @@ transform: rotate(-45deg);
     width: 100%;
     margin-right: 0;
 }
+.modal-map {
+    display: none;
+    top: 50%;
+    left: 50%;
+    width: 766px;
+    height: 561px;
+    margin-top: -280px;
+    margin-left: -390px;
+    border: 7px solid white;
+    
+}
+.modal-map p {
+    margin: 0;
+}
+/* PRICE */
